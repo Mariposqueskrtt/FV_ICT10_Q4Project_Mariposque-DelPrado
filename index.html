@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background-image: url('https://i.pinimg.com/1200x/61/96/65/61966527b1ff12dd7a53f99bca4e1d00.jpg');
+            background-size: cover;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: rgb(245, 211, 238);
+            padding: 30px 50px;
+            box-sizing: border-box;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgb(149, 80, 137);
+            font-style: italic;
+        }
+
+        input, button {
+            width: 300px;
+            height: 40px;
+            margin: 10px;
+        }
+
+    b {
+            color: rgb(149, 80, 137);
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div><b>10-EMERALD SY 25-26</b></div>
+    <ul>
+        <li><a href="index.html">Classmates</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="highlights.html">Team Highlights</a></li>
+    </ul>
+</nav>
+
+<h1>Classmate System</h1>
+
+<input id="name" placeholder="Name"><br>
+<input id="section" placeholder="Section"><br>
+<input id="subject" placeholder="Subject"><br>
+
+<button py-click="add_classmate">Add</button>
+<button py-click="show_list">Show List</button>
+
+<h2>List</h2>
+<div id="list"></div>
+
+<py-config>
+packages = ["matplotlib"]
+</py-config>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>

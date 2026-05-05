@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>4Q Project</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+body {
+    margin: 0;
+    background-image: url('https://i.pinimg.com/1200x/f3/64/b7/f364b7d0a49566891789d291b8b2e53f.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding-top: 120px; 
+    text-align: center;
+}
+
+    .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+}
+
+.navbar ul li a {
+    color: rgb(199, 164, 218);
+    font-style: 'Arial Black', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+b {
+    color: rgb(199, 164, 218);
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 35px;
+
+}
+
+.cont1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    object-fit: cover;
+}
+
+p {
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(184, 222, 255);
+    padding: 2px;
+}
+
+</style>
+</head>
+<nav class="navbar">
+    <div><b>10-EMERALD SY 25-26</b></div>
+    <ul>
+        <li><a href="index.html">Classmate List</a></li>
+        <li><a href="attendance.html">Attendance Checker</a></li>
+        <li><a href="highlights.html">Team Highlights</a></li>
+    </ul>
+</nav>
+
+<div class="cont1">
+
+  <div class="group1">
+  <img src="https://i.pinimg.com/736x/75/70/e1/7570e1566a4d800342d215d23b5abf0c.jpg" width="250">
+  <p id="p">Shia Cruz</p>
+    </div>
+
+    <div class="group2">
+  <img src="https://scontent-nrt6-1.xx.fbcdn.net/v/t39.30808-6/654260870_1358675149626936_4815241661765559301_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=_U1203uLoqIQ7kNvwF-bzO6&_nc_oc=AdrdbOuQdYdJje5mnerQLsRXtkKNi-bMieM3sMrE-3Cdej7Bhp6aGfC8Vk2GaRmEQfU&_nc_zt=23&_nc_ht=scontent-nrt6-1.xx&_nc_gid=JTDxSOB5pnMbZYWPDTHd_Q&_nc_ss=7b2a8&oh=00_Af6YG98KX88gy6YQmXATaoUAsrdMTu5WcCiZ1NcLHmx9zw&oe=69FF611F" width= "250">
+  <p id="p">Xylee Goyenechea</p>
+  </div>
+
+  <div class="group3">
+  <img src="https://i.pinimg.com/736x/54/07/ea/5407eaceb3d38b2d101ebff2608c3966.jpg" width= "250">
+  <p id="p">Ioana Haberia</p>
+  </div>
+
+  <div class="group4">
+  <img src="https://i.pinimg.com/736x/af/aa/52/afaa52dc48746f27460596e09a14cbee.jpg" width= "250">
+  <p id="p">Sofia Guevarra</p>
+  </div>
+
+  <div class="group5">
+  <img src="https://i.pinimg.com/736x/ca/1a/b8/ca1ab86439ef1726300ac9c5b36f2300.jpg" width= "250">
+  <p id="p">Adrian Gavina</p>
+    </div>
+
+    <div class="group6">
+  <img src="https://i.pinimg.com/736x/c4/6c/9f/c46c9fddcd52f57843e73ff59fc4d984.jpg" width= "250">
+  <p id="p">Jairo Agudo</p>
+    </div>
+
+    <div class="group7">
+  <img src="https://i.pinimg.com/736x/47/fd/60/47fd603ce94b989eb91363ccfe474874.jpg" width= "250">
+  <p id="p">Naser Al Hazmi</p>
+    </div>
+
+    <div class="group8">
+  <img src="https://i.pinimg.com/736x/73/db/4e/73db4ee9610b4d188cbf94ee04743a4e.jpg" width= "250">
+  <p id="p">Mikko Alaiza</p>
+    </div>
+
+    <div class="group9">
+  <img src="https://i.pinimg.com/474x/ac/e9/df/ace9df8dc24635ed60092e80dae624ad.jpg" width= "250">
+  <p id="p">Matthew Banaag</p>
+    </div>
+
+    <div class="group10">
+  <img src="https://i.pinimg.com/736x/48/45/73/48457381f78aa8b751f193b71375415b.jpg" width= "250">
+  <p id="p">Emille Barcelona</p>
+    </div>
+
+    <div class="group11">
+  <img src="https://i.pinimg.com/736x/c8/e8/d4/c8e8d46017a1e5436c15c40ac3dda748.jpg" width= "250">
+  <p id="p">Cyrene Brion</p>
+    </div>
+
+    <div class="group12">
+  <img src="https://i.pinimg.com/736x/32/a0/f5/32a0f599b38403e47d3b6faa13caae8d.jpg" width= "250">
+  <p id="p">Miguel Buo</p>
+    </div>
+
+    <div class="group13">
+  <img src="https://i.pinimg.com/736x/74/64/f8/7464f855307a192114b192305834b85a.jpg" width= "250">
+  <p id="p">Lian Castro</p>
+    </div>
+
+    <div class="group14">
+  <img src="https://i.pinimg.com/736x/ca/c6/1e/cac61eca31287e81730853fd6f934c96.jpg" width= "250">
+  <p id="p">KC Del Prado</p>
+    </div>
+
+    <div class="group15">
+  <img src="https://i.pinimg.com/736x/9f/f7/cf/9ff7cfbdc73800c1add0b91ef8eab39b.jpg" width= "250">
+  <p id="p">Gianna Entrada</p>
+    </div>
+
+    <div class="group16">
+  <img src="https://i.pinimg.com/736x/85/90/b1/8590b1402931717e1041a4ace74f5c19.jpg" width= "250">
+  <p id="p">Gavin Francisco</p>
+    </div>
+
+    <div class="group17">
+  <img src="https://i.pinimg.com/736x/f0/9a/14/f09a14f7f466d4293910b57fc8d88a12.jpg" width= "250">
+  <p id="p">Alex Janayan</p>
+    </div>
+
+    <div class="group18">
+  <img src="https://i.pinimg.com/736x/11/a6/06/11a6060400a1b5498f14120cda3396f8.jpg" width= "250">
+  <p id="p">Jabez Libutan</p>
+    </div>
+
+    <div class="group19">
+  <img src="https://i.pinimg.com/736x/a8/1b/63/a81b63f1f09b26bd4c2c2fcc42a46f77.jpg" width= "250">
+  <p id="p">Arabella Lubo</p>
+    </div>
+
+    <div class="group20">
+  <img src="https://i.pinimg.com/736x/2c/11/2e/2c112e42c20e85c46a76d50b78a2a96e.jpg" width= "250">
+  <p id="p">Luisa Manuel</p>
+    </div>
+
+    <div class="group21">
+  <img src="https://i.pinimg.com/736x/3b/6a/21/3b6a21839f2ec2eb41ab29276b304775.jpg" width= "250">
+  <p id="p">Janine Mariposque</p>
+    </div>
+
+    <div class="group22">
+  <img src="https://i.pinimg.com/736x/a1/79/cf/a179cf913615bbbc5cf680e969a8e8be.jpg" width= "250">
+  <p id="p">Rycob Pagtalunan</p>
+    </div>
+
+    <div class="group23">
+  <img src="https://i.pinimg.com/474x/ba/db/42/badb42c4d4e3341f21e952fd21389b6d.jpg" width= "250">
+  <p id="p">Lucas Reyes</p>
+    </div>
+
+    <div class="group24">
+  <img src="https://i.pinimg.com/474x/53/ed/87/53ed873bbc819b1c7dc8cdf5b5a9ea5c.jpg" width= "250">
+  <p id="p">Fateh Singh</p>
+    </div>
+
+    <div class="group25">
+  <img src="https://i.pinimg.com/736x/82/1d/0b/821d0bf2de9bc2ff4eb60a42de79d213.jpg" width= "250">
+  <p id="p">Tyronne Subaan</p>
+    </div>
+
+    <div class="group26">
+  <img src="https://i.pinimg.com/736x/9b/3c/18/9b3c18b91c8e53ffd9e8e78fc0be6be4.jpg" width= "250">
+  <p id="p">Audrey Tan</p>
+    </div>
+
+    <div class="group27">
+  <img src="https://i.pinimg.com/736x/59/d7/95/59d7952d82b6600e4459ae9be6780341.jpg" width= "250">
+  <p id="p">Alexandra Vargas</p>
+    </div>
+
+    <div class="group28">
+  <img src="https://i.pinimg.com/474x/56/5b/08/565b08cfc0b81ff6b7953d5eb7865df7.jpg" width= "250">
+  <p id="p">James Zaldivar</p>
+    </div>
+
+    
+
+</div>

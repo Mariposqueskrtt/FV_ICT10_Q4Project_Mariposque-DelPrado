@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background-image: url('https://i.pinimg.com/1200x/61/96/65/61966527b1ff12dd7a53f99bca4e1d00.jpg');
+            background-size: cover;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background: rgb(157, 206, 250);
+            padding: 30px 50px;
+            box-sizing: border-box;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgb(66, 136, 168);
+            font-style: italic;
+        }
+
+        input, select, button {
+            width: 300px;
+            height: 40px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div><b>10-EMERALD SY 25-26</b></div>
+    <ul>
+        <li><a href="index.html">Classmates</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="highlights.html">Team Highlights</a></li>
+    </ul>
+</nav>
+
+<h1>Attendance Tracker</h1>
+
+<select id="class_day">
+    <option>Monday</option>
+    <option>Tuesday</option>
+    <option>Wednesday</option>
+    <option>Thursday</option>
+    <option>Friday</option>
+</select>
+
+<br>
+
+<input id="absence_input" placeholder="Absences">
+
+<br>
+
+<button py-click="submit_graph">Submit</button>
+
+<div id="output"></div>
+<div id="graph"></div>
+
+<py-config>
+packages = ["matplotlib"]
+</py-config>
+
+<py-script src="main.py"></py-script>
+</body>
+</html>
